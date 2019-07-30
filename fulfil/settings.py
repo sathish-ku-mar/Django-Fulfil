@@ -25,7 +25,7 @@ SECRET_KEY = '!#5^v@e=69#21l3sd1a*1=)cds84lvtj92#h=(k!e@01jb-tga'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['fulfill-assigmenet.herokuapp.com']
+ALLOWED_HOSTS = ['fulfill-assigmenet.herokuapp.com', '13.235.16.186']
 
 
 # Application definition
