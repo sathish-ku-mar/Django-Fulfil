@@ -79,11 +79,11 @@ WSGI_APPLICATION = 'fulfil.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'fulfil',
-        'USER': 'myprojectuser',
-        'PASSWORD': 'password',
-        'HOST': 'localhost',
-        'PORT': '',
+        'NAME': 'd39h3qkkedemrr',
+        'USER': 'wtbyebqpwmsrfs',
+        'PASSWORD': '0079554f918da0825e410ac70c5a86ac996678092b1da75bd67350cb5c1ae311',
+        'HOST': 'ec2-54-204-35-248.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
