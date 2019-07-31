@@ -25,7 +25,7 @@ SECRET_KEY = '!#5^v@e=69#21l3sd1a*1=)cds84lvtj92#h=(k!e@01jb-tga'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['fulfill-assigmenet.herokuapp.com', '13.235.16.186']
+ALLOWED_HOSTS = ['fulfill-assigmenet.herokuapp.com', '13.235.16.186', '127.0.0.1']
 
 
 # Application definition
@@ -126,7 +126,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# CELERY_BROKER_URL = 'amqp://localhost'
-CELERY_BROKER_URL = 'amqp://lhuaidrr:vPAMU-2YD_-zm7XZK_4Uhledt-A6ia6f@barnacle-01.rmq.cloudamqp.com/%2Flhuaidrr'
-BROKER_POOL_LIMIT = 3
-BROKER_URL = 'amqp://lhuaidrr:vPAMU-2YD_-zm7XZK_4Uhledt-A6ia6f@barnacle-01.rmq.cloudamqp.com/%2Flhuaidrr'
+CELERY_BROKER_URL = 'amqp://localhost'
+
