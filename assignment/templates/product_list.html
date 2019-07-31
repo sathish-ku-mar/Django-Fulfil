@@ -2,7 +2,16 @@
 {% load bootstrap3 %}
 
 {% block content %}
-
+<style>
+    .custom-file p{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5rem;
+    }
+    th{
+    font-size: 1.3rem;
+    }
+</style>
 <div class="jumbotron">
   {% if messages %}
     <ul class="p-3 mb-2 bg-info text-white text-center">
@@ -41,9 +50,9 @@
 </div>
 
     <form method="get">
-        <div class="custom-file mb-3">
+        <div class="custom-file mb-3" style="padding-left: 130px;display: inline-flex">
             {{ filter.form.as_p }}
-            <button type="submit" class="btn btn-primary">Search</button>
+            <button type="submit" class="btn btn-primary button_submit">Search</button>
         </div>
   </form>
 

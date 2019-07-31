@@ -24,10 +24,11 @@ class ProductListView(FilterView, ListView, CreateView):
         paginator = Paginator(queryset, 25)  # Show 25 contacts per page
         page = request.GET.get('page')
         user = request.GET.get('name')
+        active = request.GET.get('active')
 
         context['product_list'] = paginator.get_page(page)
         context['filter'] = UserFilter(request.GET, queryset=queryset)
-        if user:
+        if user or active:
             context['product_list'] = UserFilter(request.GET, queryset=queryset).qs
 
         return render(request,self.template_name,context)

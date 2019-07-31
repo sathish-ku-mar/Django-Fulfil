@@ -1,5 +1,7 @@
 import string
 
+from django.shortcuts import redirect
+
 from .models import Product
 
 from celery import shared_task
@@ -20,8 +22,16 @@ def create_products(records):
 
 import django_filters
 
+STATUS_CHOICES = (
+    (True, 'Active'),
+    (False, 'Inactive')
+)
+
+
 class UserFilter(django_filters.FilterSet):
     name = django_filters.CharFilter(lookup_expr='icontains')
+    active = django_filters.ChoiceFilter(choices=STATUS_CHOICES, lookup_expr='icontains')
+
     class Meta:
         model = Product
-        fields = ['name', ]
+        fields = ['name', 'active']
