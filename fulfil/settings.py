@@ -127,6 +127,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # CELERY_BROKER_URL = 'amqp://localhost'
-CELERY_BROKER_URL = 'amqp://lhuaidrr:vPAMU-2YD_-zm7XZK_4Uhledt-A6ia6f@barnacle.rmq.cloudamqp.com/lhuaidr'
+CELERY_BROKER_URL = 'amqp://lhuaidrr:vPAMU-2YD_-zm7XZK_4Uhledt-A6ia6f@barnacle.rmq.cloudamqp.com/lhuaidr/'
 BROKER_POOL_LIMIT = 3
-BROKER_URL = 'amqp://lhuaidrr:vPAMU-2YD_-zm7XZK_4Uhledt-A6ia6f@barnacle.rmq.cloudamqp.com/lhuaidr'
+BROKER_URL = 'amqp://lhuaidrr:vPAMU-2YD_-zm7XZK_4Uhledt-A6ia6f@barnacle.rmq.cloudamqp.com/lhuaidr/'
